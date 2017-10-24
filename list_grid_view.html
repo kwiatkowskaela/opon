@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>List Grid View - Bootsnipp.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        /* Spis css
+
+1.Globalne
+2.Belka z menu
+3.Wyszukiwarka
+4.Kafle
+
+/*=======================================================
+1.  Globalne
+========================================================*/
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-family: 'geomanistbold';
+            font-size: 36px;
+            font-weight: bolder;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-top: -10px;
+        }
+
+        h6 {
+            color: #ffffff;
+        }
+
+        .in_line {
+            display: inline-block;
+        }
+
+
+        /*=======================================================
+2.  belka z menu
+========================================================*/
+
+        .navbar-top-logo {
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            width: 100%;
+            height: 35px;
+            border: none;
+            background: -webkit-linear-gradient(0deg, rgb(227, 6, 19) 0, rgb(227, 6, 19) 80%, #004996 82%, #004996 100%);
+            background: -moz-linear-gradient(90deg, rgb(227, 6, 19) 0, rgb(227, 6, 19) 80%, #004996 82%, #004996 100%);
+            background: linear-gradient(90deg, rgb(227, 6, 19) 0, rgb(227, 6, 19) 80%, #004996 82%, #004996 100%);
+            background-repeat: no-repeat;
+            background-position: 89% 50%, 50% 50%;
+            -webkit-background-origin: padding-box;
+            background-origin: padding-box;
+            -webkit-background-clip: border-box;
+            background-clip: border-box;
+            -webkit-background-size: auto auto;
+            background-size: auto auto;
+
+        }
+
+        .navbar-top-logo>img {
+            float: right;
+            margin-right: 10%;
+        }
+
+        header {
+            background-color: #fff;
+        }
+
+        header>.navbar-top {
+            background-color: #ffffff;
+            height: 161px;
+            width: 1143px;
+            position: relative;
+            top: 0;
+        }
+
+        .phone {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .navbar-top .phone .fa {
+            height: 16px;
+            color: #e30613;
+            padding: 0px 10px 0px 10px;
+        }
+
+        .logo {
+            padding: 30px;
+        }
+
+
+        /*=======================================================
+3. Wyszukiwarka
+========================================================*/
+
+        ul {
+            margin-left: 0;
+            padding: 0;
+
+        }
+
+        .question,
+        .answer {
+            list-style-type: none;
+        }
+
+        .question {
+
+            padding: 1em 1em 0.5em 14em;
+            font-weight: bold;
+            position: relative;
+        }
+
+        ul:last-child {
+            border-bottom: 1px solid grey;
+        }
+
+        .question:hover {
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            padding: 1em 0.5em 2.5em;
+        }
+
+        .expand-bar {
+            position: absolute;
+            top: 50%;
+            left: 180px;
+            transition: all 0.5s ease;
+
+        }
+
+        .expand-bar,
+        .expand-bar:after {
+            width: 10px;
+            height: 2px;
+            background-color: #004996;
+        }
+
+        .expand-bar:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(90deg);
+            transition: all 0.5s ease;
+        }
+
+        .open {
+            border-bottom: none;
+        }
+
+        .open .expand-bar {
+            transform: rotate(180deg);
+        }
+
+        .open .expand-bar:after {
+            transform: rotate(180deg);
+        }
+
+        .search-adv {
+            color: #01539e;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /*=======================================================
+4. Kafle
+========================================================*/
+
+        /* promocyjne ikony duża lista */
+
+        .item.list-group-item {
+            float: none;
+            width: 100%;
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+
+
+        .item.list-group-item .list-group-image {
+            margin-right: 0px;
+            border: none;
+        }
+
+        .item.list-group-item .thumbnail {
+            margin-bottom: 0px;
+            border: none;
+        }
+
+        .item.list-group-item .caption {
+            padding: 0px 0px 0px 0px;
+            border: none;
+        }
+
+        .item.list-group-item:nth-of-type(odd) {
+            background: red;
+        }
+
+        .item.list-group-item:before,
+        .item.list-group-item:after {
+            display: table;
+            content: " ";
+        }
+
+        .item.list-group-item img {
+            float: left;
+        }
+
+        .item.list-group-item:after {
+            clear: both;
+        }
+
+        .list-group-item-text {
+            margin: 0 0 0px;
+        }
+
+        /* Style for "tło nazwy" */
+
+        .name-product {
+            padding: 0px;
+            margin: 0px;
+            height: 78px;
+            background-color: #eeeeee;
+            background-image: linear-gradient(to left, #ffffff 0%, #dddddd 100%);
+            position: relative;
+        }
+
+
+        .name-product>.name {
+            position: absolute;
+            top: 0;
+            margin-left: 190px;
+
+        }
+
+        .name-product>.name>h2 {
+            padding: 0px;
+        }
+
+        .name-product>.name>h3 {
+            padding: 0px;
+        }
+
+        .product_content {
+
+            height: 215px;
+            background-color: #ffffff;
+
+        }
+
+        .best {
+            margin-left: -10px;
+            bottom: -10px;
+            z-index: 50;
+        }
+
+        .image_product {
+
+            left: 0px;
+            bottom: -2px;
+        }
+
+
+
+        /* promocyjne ikony duża lista */
+
+        .like {
+            margin: 0px;
+            width: 184px;
+            height: 78px;
+            background-image: url(../assets/button_ok.svg)
+        }
+
+        .name-product>h6 {
+            padding: 20px 0px 20px 20px;
+        }
+
+
+        .name-product>.promo {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .promo_icon_gift {
+            width: 104px;
+            height: 78px;
+            color: #ffffff;
+            background-color: #004996;
+            float: right;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+
+        .promo_recommend {
+            width: 104px;
+            height: 78px;
+            background-color: #f26522;
+            float: right;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+
+
+        }
+
+        .promo_sale {
+            width: 104px;
+            height: 78px;
+            background-color: #f7941d;
+            float: right;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+
+
+
+        .new {
+            margin: 10px 0px -45px 200px;
+            padding: 2px 3px 2px 3px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #e30613;
+            color: #e30613;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /*
+*/
+
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="clearfix">
+        <!-- belka z logo -->
+        <div class="navbar-top-logo"><img src="assets/logo.jpg" alt="">
+            <!-- <img src="assets/logo.jpg" alt="logo strona sieci opon express" class="logo_nav">--></div>
+        <!-- navbar-top -->
+        <div class="navbar-top">
+            <div class="row">
+                <div class="logo col-4"><img src="assets/logo_opny_express.png" alt="logo strona glowna" class="logo_nav"></div>
+                <div class="phone col-4">68 333 33 33 <i class="fa fa-phone" aria-hidden="true"></i> 728 999 999<br>Pn-Pt 7.00-22.00 <i class="fa fa-clock-o" aria-hidden="true"></i> Sb-Nd 8.00-15.00</div>
+                <div class="cart col-4"><img src="assets/user.svg" alt="logo strona glowna">Twoje konto</span>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <div class="container">
+        <div class="well well-sm">
+
+            <div class="btn-group">
+                <a href="#" id="list"><img src="assets/kafle-poziome-iko.png" alt=""></a> <a href="#" id="grid"><img src="assets/kafle-pionowe.png" alt=""></a>
+            </div>
+        </div>
+        <div id="products" class="row list-group">
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+
+                    <div class="row">
+
+                        <div class="name-product">
+
+                            <div class="like col-2"> <img src="assets/like.svg" alt="">
+                                <h6>Oszczędność paliwa</h6>
+                            </div>
+                            <div class="name in_line col-5">
+                                <div class="new">NOWOŚĆ</div>
+                                <h2>Continental</h2>
+                                <h3>contsportcontact 205/55 R16 91 W</h3>
+
+                            </div>
+                            <div class="promo col-5"> <button type="button" class="promo_icon_gift" data-toggle="tooltip" data-placement="left" title="prezent">
+ <img src="assets/prezent-iko.png" alt=""><h5>Prezent</h5>
+</button>
+
+                                <button type="button" class="promo_recommend" data-toggle="tooltip" data-placement="left" title="Promocja">
+ <img src="assets/vector-smart-object.png" alt=""><h5>Promocja</h5>
+</button>
+
+                                <button type="button" class="promo_sale" data-toggle="tooltip" data-placement="left" title="Wyprzedaż">
+ <img src="assets/no-yczki-iko.png" alt=""><h5>Wyprzedaż</h5>
+</button></div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="product_content in_line col-3">
+                            <div class="text_promo">Promocja ! I CeNA/JAKOŚĆ </div>
+                            <!-- <div class="best"><img src="assets/bestseller.png" alt=""></div> -->
+                            <div class="image_product"><img src="assets/zdj-opona.png" alt=""></div>
+                        </div>
+                        <div class="product_content in_line col-3">
+                            <div class="text_promo">Promocja ! I CeNA/JAKOŚĆ </div>
+                            <!-- <div class="best"><img src="assets/bestseller.png" alt=""></div> -->
+                            <div class="image_product"><img src="assets/zdj-opona.png" alt=""></div>
+                        </div>
+                        <div class="product_content in_line col-3">
+                            <div class="text_promo">Promocja ! I CeNA/JAKOŚĆ </div>
+                            <!-- <div class="best"><img src="assets/bestseller.png" alt=""></div> -->
+                            <div class="image_product"><img src="assets/zdj-opona.png" alt=""></div>
+                        </div>
+                        <div class="product_content in_line col-3">
+                            <div class="text_promo">Promocja ! I CeNA/JAKOŚĆ </div>
+                            <!-- <div class="best"><img src="assets/bestseller.png" alt=""></div> -->
+                            <div class="image_product"><img src="assets/zdj-opona.png" alt=""></div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
+                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p class="group inner list-group-item-text">
+                            Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    $21.000</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#list').click(function(event) {
+                event.preventDefault();
+                $('#products .item').addClass('list-group-item');
+            });
+            $('#grid').click(function(event) {
+                event.preventDefault();
+                $('#products .item').removeClass('list-group-item');
+                $('#products .item').addClass('grid-group-item');
+            });
+        });
+        //tooltip
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,842 @@
+/* Spis css
+
+1.Globalne
+2.kolumny
+
+
+
+belka z menu
+
+*/
+
+.color {
+    color: ##e30613;
+    color: #f7941d;
+    color: #004996;
+    color: #333333;
+    color: #bbbbbb;
+    color: #eeeeee;
+    color: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: 'geomanistregular';
+    background-color: #bbbbbb;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'geomanistbold';
+    font-size: 36px;
+    font-weight: bolder;
+
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h6 {
+    color: #ffffff;
+    display: inline;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1143px;
+    margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.in_line {
+    display: inline-block;
+}
+
+
+/*=======================================================
+      kolumny
+========================================================*/
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    padding: 0px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-offset-0 {
+    margin-left: 0;
+}
+
+.col-offset-1 {
+    margin-left: 8.33%;
+}
+
+.col-offset-2 {
+    margin-left: 16.66%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.33%;
+}
+
+.col-offset-5 {
+    margin-left: 41.66%;
+}
+
+.col-offset-6 {
+    margin-left: 50%;
+}
+
+.col-offset-7 {
+    margin-left: 58.33%;
+}
+
+.col-offset-8 {
+    margin-left: 66.66%;
+}
+
+.col-offset-9 {
+    margin-left: 75%;
+}
+
+.col-offset-10 {
+    margin-left: 83.33%;
+}
+
+.col-offset-11 {
+    margin-left: 91.66%;
+}
+
+
+/*=======================================================
+      belka z menu
+========================================================*/
+
+.logo_nav {
+    float: right;
+    margin-right: 10%;
+}
+
+.navbar_top {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100%;
+    height: 35px;
+    border: none;
+    background: -webkit-linear-gradient(0deg, rgb(227, 6, 19) 0, rgb(227, 6, 19) 80%, #004996 82%, #004996 100%);
+    background: -moz-linear-gradient(90deg, rgb(227, 6, 19) 0, rgb(227, 6, 19) 80%, #004996 82%, #004996 100%);
+    background: linear-gradient(90deg, rgb(227, 6, 19) 0, rgb(227, 6, 19) 80%, #004996 82%, #004996 100%);
+    background-repeat: no-repeat;
+    background-position: 89% 50%, 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+}
+
+header section {
+    padding-bottom: 20px;
+}
+
+header {
+    background-color: #fff;
+}
+
+.logo {
+    padding: 30px;
+}
+
+
+/*****************************/
+
+section.search {
+    margin-top: -62px;
+}
+
+
+/* Flip */
+
+/*****************************/
+
+.tabs {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+
+/* Nav */
+
+.tabs nav {
+    text-align: center;
+}
+
+.tabs nav ul {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: center;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+.tabs nav ul li {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: center;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.tabs nav a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.5;
+}
+
+.tabs nav a span {
+    vertical-align: middle;
+    font-size: 0.75em;
+}
+
+.tabs nav li.tab-current a {
+    color: #74777b;
+}
+
+.tabs nav a:focus {
+    outline: none;
+}
+
+
+/* Icons */
+
+.icon::before {
+    z-index: 10;
+    display: inline-block;
+    margin: 0 0.4em 0 0;
+    vertical-align: middle;
+    text-transform: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 1.3em;
+    font-family: 'stroke7pixeden';
+    line-height: 1;
+    speak: none;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-car::before {
+    content: url(../assets/samochodowe.png);
+}
+
+.icon-tractor::before {
+    content: url(../assets/rolnicze.png);
+}
+
+.icon-tir::before {
+    content: url(../assets/przemys-owe.png);
+}
+
+
+/* Content wyszukiwarka */
+
+.button-search {
+    text-transform: uppercase;
+
+}
+
+.button-search-top {
+    text-transform: uppercase;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 1, 0.5);
+    background-color: #f7941d;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.content-wrap {
+    position: relative;
+}
+
+.panel {
+    margin: 15px;
+    background-image: linear-gradient(to right, #dddddd 0%, #eeeeee 100%);
+    font-size: 14px;
+
+
+}
+
+.panel-default {
+    border-color: #ddd;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 22px;
+}
+
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+
+.form-control-all {
+    display: inline-block;
+    width: 337px;
+    height: 43px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control {
+    display: inline-block;
+    width: 99px;
+    height: 43px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.content-wrap section {
+    display: none;
+    margin: -20px auto;
+    max-width: 1200px;
+    margin-bottom: 100px text-align: center;
+    -webkit-box-shadow: 0px 2px 2px 1px rgba(89, 89, 89, 1);
+    -moz-box-shadow: 0px 2px 2px 1px rgba(89, 89, 89, 1);
+    box-shadow: 0px 2px 2px 1px rgba(89, 89, 89, 1);
+}
+
+.content-wrap section.content-current {
+    display: block;
+}
+
+.content-wrap section p {
+    margin: 0;
+    padding: 5px 0;
+
+
+    line-height: 1;
+}
+
+#section-flip-1 {}
+
+/*zakres cen*/
+
+/* Fallback */
+
+.no-js .content-wrap section {
+    display: block;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.no-flexbox nav ul {
+    display: block;
+}
+
+.no-flexbox nav ul li {
+    min-width: 15%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 58em) {
+    .tabs nav a.icon span {
+        display: none;
+    }
+    .tabs nav a:before {
+        margin-right: 0;
+    }
+}
+
+.tabs-style-flip {
+    max-width: 1140px;
+}
+
+.tabs-style-flip nav a {
+    font-size: 22px;
+    color: #333333;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.tabs-style-flip nav a:hover,
+.tabs-style-flip nav a:focus,
+.tabs-style-flip nav li.tab-current a {
+    color: #000000;
+}
+
+.tabs-style-flip nav a span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.625em;
+}
+
+.tabs-style-flip nav a::after {
+    color: #333333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-perspective-origin: 50% 100%;
+    perspective-origin: 50% 100%;
+}
+
+.tabs-style-flip nav li.tab-current a::after {
+    background-color: #eeeeee;
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, 0deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, 0deg);
+}
+
+.tabs-style-flip .content-wrap {
+    background: #eeeeee;
+}
+
+
+
+/* Style for "tło nazwy" */
+
+.name_product {
+    width: 1143px;
+    height: 78px;
+    background-color: #eeeeee;
+    background-image: linear-gradient(to left, #ffffff 0%, #dddddd 100%);
+}
+
+.product_content {
+
+    height: 215px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.best {
+    position: absolute;
+    margin-left: -10px;
+    bottom: -10px;
+    z-index: 50;
+}
+
+.image_product {
+    position: absolute;
+    padding-left: 20px;
+    bottom: -2px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    height: 161px;
+    width: 1143px;
+}
+
+.phone {
+    padding-top: 39px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.cart {
+    bottom: 0px;
+    padding-top: 39px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.navbar .phone .fa {
+    height: 16px;
+    color: #e30613;
+    padding: 0px 10px 0px 10px;
+}
+
+
+
+ul {
+    margin-left: 0;
+    padding: 0;
+
+}
+
+.question,
+.answer {
+    list-style-type: none;
+}
+
+.question {
+
+    padding: 1em 1em 0.5em 14em;
+    font-weight: bold;
+    position: relative;
+}
+
+ul:last-child {
+    border-bottom: 1px solid grey;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    padding: 1em 0.5em 2.5em;
+}
+
+.expand-bar {
+    position: absolute;
+    top: 50%;
+    left: 180px;
+    transition: all 0.5s ease;
+
+}
+
+.expand-bar,
+.expand-bar:after {
+    width: 10px;
+    height: 2px;
+    background-color: #004996;
+}
+
+.expand-bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(90deg);
+    transition: all 0.5s ease;
+}
+
+.open {
+    border-bottom: none;
+}
+
+.open .expand-bar {
+    transform: rotate(180deg);
+}
+
+.open .expand-bar:after {
+    transform: rotate(180deg);
+}
+
+.search-adv {
+    color: #01539e;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+/*=======================================================
+4. Kafle
+========================================================*/
+
+/* promocyjne ikony duża lista */
+
+.item.list-group-item {
+    float: none;
+    width: 100%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+
+.item.list-group-item .list-group-image {
+    margin-right: 0px;
+    border: none;
+}
+
+.item.list-group-item .thumbnail {
+    padding: 10px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.item.list-group-item .caption {
+    padding: 0px 0px 0px 0px;
+    border: none;
+}
+
+.item.list-group-item:nth-of-type(odd) {
+    background: red;
+}
+
+.item.list-group-item:before,
+.item.list-group-item:after {
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img {
+    float: left;
+}
+
+.item.list-group-item:after {
+    clear: both;
+}
+
+.list-group-item-text {
+    margin: 0 0 0px;
+}
+
+/* Style for "tło nazwy" */
+
+.name-product {
+    padding: 0px;
+    margin: 0px;
+    height: 78px;
+    background-color: #eeeeee;
+    background-image: linear-gradient(to left, #ffffff 0%, #dddddd 100%);
+    position: relative;
+}
+
+
+.name-product > .name {
+    position: absolute;
+    top: 0;
+    margin-left: 0px;
+
+}
+
+.name-product > .name > h2 {
+    padding: 0px;
+}
+
+.name-product > .name > h3 {
+    padding: 0px;
+}
+
+.product_content {
+
+    height: 215px;
+    background-color: #ffffff;
+
+}
+
+.best {
+    margin-left: -10px;
+    bottom: -10px;
+    z-index: 50;
+}
+
+.image_product {
+
+    left: 0px;
+    bottom: -2px;
+}
+
+
+
+/* promocyjne ikony duża lista */
+
+.like {
+    margin: 0px;
+    width: 184px;
+    height: 78px;
+    background-image: url(../assets/button_ok.svg)
+}
+
+.name-product > h6 {
+    padding: 20px 0px 20px 20px;
+}
+
+
+.name-product > .promo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.promo_icon_gift {
+    width: 104px;
+    height: 78px;
+    color: #ffffff;
+    background-color: #004996;
+    float: right;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.promo_recommend {
+    width: 104px;
+    height: 78px;
+    background-color: #f26522;
+    float: right;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+
+
+}
+
+.promo_sale {
+    width: 104px;
+    height: 78px;
+    background-color: #f7941d;
+    float: right;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+
+.new {
+    margin: 10px 0px -45px 200px;
+    padding: 2px 3px 2px 3px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #e30613;
+    color: #e30613;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
