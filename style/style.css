@@ -19,6 +19,8 @@ belka z menu
     color: #000000;
 }
 
+
+
 body {
     margin: 0;
     font-family: 'geomanistregular';
@@ -564,11 +566,13 @@ section.search {
     bottom: -2px;
 }
 
-.navbar {
-    background-color: #ffffff;
-    height: 161px;
-    width: 1143px;
+
+
+.position {
+    position: static;
 }
+
+
 
 .phone {
     padding-top: 39px;
