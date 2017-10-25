@@ -20,6 +20,9 @@ belka z menu
 }
 
 
+html {
+    background-color: #bbbbbb;
+}
 
 body {
     margin: 0;
@@ -352,6 +355,9 @@ section.search {
     color: #fff;
     font-weight: 500;
     font-size: 18px;
+
+    left: 0px;
+    top: 0px;
 }
 
 .content-wrap {
@@ -692,10 +698,51 @@ ul:last-child {
     border: none;
 }
 
+
+
+.item.grid-group-item .promo_icon_gift {
+    width: 104px;
+    height: 78px;
+    color: #ffffff;
+    background-color: #486996;
+    float: right;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.item.grid-group-item .thumbnail {
+    width: 100%;
+    background: #000;
+    border: none;
+    padding: 0px;
+    margin: 20px;
+
+}
+
+.item.list-group-item .promo_icon_gift {
+    width: 104px;
+    height: 78px;
+    color: #ffffff;
+    background-color: #004996;
+    float: right;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
 .item.list-group-item .thumbnail {
     padding: 10px;
     margin-bottom: 0px;
     border: none;
+    background: red;
 }
 
 .item.list-group-item .caption {
@@ -703,9 +750,7 @@ ul:last-child {
     border: none;
 }
 
-.item.list-group-item:nth-of-type(odd) {
-    background: red;
-}
+
 
 .item.list-group-item:before,
 .item.list-group-item:after {
@@ -793,17 +838,9 @@ ul:last-child {
     right: 0;
 }
 
-.promo_icon_gift {
-    width: 104px;
-    height: 78px;
-    color: #ffffff;
-    background-color: #004996;
-    float: right;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 24px;
-    text-transform: uppercase;
-}
+
+
+
 
 .promo_recommend {
     width: 104px;
