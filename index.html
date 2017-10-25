@@ -27,14 +27,14 @@
 </head>
 
 <body>
-    <header class="clearfix">
+    
         <!-- belka z logo -->
         <div class="navbar_top"><a href="http://www.oponyexpress.pl/"><img src="assets/logo.jpg" alt="logo strona sieci opon express" class="logo_nav"></a></div>
-
+<header id="header" class="clearfix">
         <!-- navbar -->
-        <div class="navbar position container">
+        <div class="position container">
             <div class="row">
-                <div class="logo col-4"><img src="assets/logo_opny_express.png" alt="logo strona glowna" class="logo_nav"></div>
+                <div class="logo col-4"><img src="assets/logo_opny_express.png" alt="logo strona glowna" class="img-fluid"></div>
                 <div class="phone col-4">68 333 33 33 <i class="fa fa-phone" aria-hidden="true"></i> 728 999 999<br>Pn-Pt 7.00-22.00 <i class="fa fa-clock-o" aria-hidden="true"></i> Sb-Nd 8.00-15.00</div>
                 
                 
@@ -47,7 +47,7 @@
 
     
     <!-- wyszukiwarka -->
-    <section class="search">
+    <section class="search container">
         <div class="tabs tabs-style-flip">
             <nav>
                 <ul>
@@ -59,7 +59,7 @@
             </nav>
             <div class="content-wrap">
 
-
+ <!-- wyszukiwarka samochody osobowe -->
                 <section id="section-flip-1">
                     <div class="container">
                         <div class="row">
@@ -67,12 +67,12 @@
                                 <div class="panel panel-default">
                                     <div class="panel-body">
                                         <div class="button-search col-2">
-                                            <div class="col-3">
+                                            
                                                 <div class="button-search"><i class="fa fa-car" aria-hidden="true"></i> szukaj opon wg rozmiaru</div>
                                                 <div class="button-search"> <i class="fa fa-arrows" aria-hidden="true"></i>szukaj WG modelu auta</div>
-                                            </div>
-                                        </div>
-                                        <form class="form-inline" role="form col-10">
+                                           
+                                        </div> 
+                                        <form class="form-inline col-8" role="form col-10">
                                             <div class="form-up">
                                                 <div class="form-group">
                                                     <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Szerokość</p></label>
@@ -174,8 +174,8 @@
                                 <option value="1000">1000</option>
                             </select>
                                                 </div>
-
-                                            </div>
+   
+                                           
                                             <li class="question search-adv" id="question">
                                                 <div class="expand-bar"></div>Wyszukiwanie zaawansowane<hr /> Nie pamiętasz rozmiaru? Szukaj wg modelu auta <span>Gdzie znaleźć rozmiar opony?</span></li>
                                                 
@@ -268,10 +268,7 @@
                                                 </div>
 
 
-                                                <!-- form group [rows] -->
-                                                <!-- form group [search] -->
-
-                                                <!-- form group [order by] -->
+                                               
                                                 <div class="form-group">
                                                     <div class="checkbox" style="margin-left:10px; margin-right:10px;">
                                                         <label><input type="checkbox">wzmacnianie</label>
@@ -282,9 +279,7 @@
                                                     <div class="checkbox" style="margin-left:10px; margin-right:10px;">
                                                         <label><input type="checkbox">tylko z monażem w sieci serwisów opony express</label>
                                                     </div>
-                                                    <div class="col-2"> <button type="submit" class="button-search-top">
-                                SZUKAJ OPON
-                            </button></div>
+                                                 
 
                                                     <div class="range-slider" id="facet-price-range-slider" data-options='{"output":{"prefix":" "},"maxSymbol":"+"}'>
                                                         <input name="range-1" value="0" min="0" max="1250" step="1" type="range">
@@ -295,6 +290,218 @@
                                             </li>
 
 
+                                        </form><div class="col-1"> <button type="submit" class="button-search-top">
+                                SZUKAJ OPON
+                            </button></div> 
+                                    </div>
+                                </div>
+                          </div>
+
+                        </div> </div>
+                    </div>
+
+
+                </section>
+                <!-- wyszukiwarka samochody rolnicze -->
+                <section id="section-flip-2">
+                     <div class="container">
+                        <div class="row">
+                            <div id="filter-panel" class=" filter-panel">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                    
+                                        <form class="form-inline" role="form col-10">
+                                            <div class="form-up">
+                                                <div class="form-group">
+                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Szerokość</p></label>
+                                                    <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="195">195</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Profil</p></label>
+                                                    <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">65</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Średnica</p></label>
+                                                    <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="15">15</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Producent</p></label>
+                                                    <select id="pref-perpage" class="form-control-all">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">Wszystko</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                </div>
+   <div class="col-2"> <button type="submit" class="button-search-top">
+                                SZUKAJ OPON
+                            </button></div>
+                                            </div>
+                                            <li class="question search-adv" id="question">
+                                                <div class="expand-bar"></div>Wyszukiwanie zaawansowane</li>
+                                                
+                                            <li class="answer">
+                                                <div class="form-up">
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Prędkość</p></label>
+                                                        <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">Wszystkie</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Nośność</p></label>
+                                                        <select id="pref-perpage" class="form-control">
+                                 <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">Wszystkie</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Konstrukcja</p></label>
+                                                        <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="15">Wszystkie</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                    </div>
+                                                  
+                                                </div>
+
+                                            </li>
+
+
                                         </form>
                                     </div>
                                 </div>
@@ -302,14 +509,216 @@
 
                         </div>
                     </div>
-
-
                 </section>
-                <section id="section-flip-2">
-                    <p>2</p>
-                </section>
+                <!-- wyszukiwarka samochody ciężarowe -->
                 <section id="section-flip-3">
-                    <p>3</p>
+                    <div class="container">
+                        <div class="row">
+                            <div id="filter-panel" class=" filter-panel">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        
+                                        <form class="form-inline" role="form col-10">
+                                            <div class="form-up">
+                                                <div class="form-group">
+                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Szerokość</p></label>
+                                                    <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="195">195</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Profil</p></label>
+                                                    <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">65</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Średnica</p></label>
+                                                    <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="15">15</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Producent</p></label>
+                                                    <select id="pref-perpage" class="form-control-all">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">Wszystko</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                </div>
+ <div class="col-2"> <button type="submit" class="button-search-top">
+                                SZUKAJ OPON
+                            </button></div>
+                                            </div>
+                                            <li class="question search-adv" id="question">
+                                                <div class="expand-bar"></div>Wyszukiwanie zaawansowane</li>
+                                                
+                                            <li class="answer">
+                                                <div class="form-up">
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Prędkość</p></label>
+                                                        <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">Wszystko</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Nośność</p></label>
+                                                        <select id="pref-perpage" class="form-control">
+                                 <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">Wszystko</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Typ pojazdu</p></label>
+                                                        <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="15">auto osobowe</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                    </div>
+                                                   
+                                                </div>
+
+
+                                          
+                                            </li>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </section>
 
             </div>
@@ -400,6 +809,7 @@
                             </div>
 
                         </div>
+                    
                         <div class="row">
                             <div class="product_content in_line col-3">
                                 <div class="text_promo">Promocja ! I CeNA/JAKOŚĆ </div>
