@@ -18,12 +18,6 @@
     <link rel="stylesheet" href="style/price.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
-
-
-
-
-
-
 </head>
 
 <body>
@@ -32,18 +26,18 @@
         <div class="navbar_top"><a href="http://www.oponyexpress.pl/"><img src="assets/logo.jpg" alt="logo strona sieci opon express" class="logo_nav"></a></div>
 <header id="header" class="clearfix">
         <!-- navbar -->
+        
         <div class="position container">
             <div class="row">
-                <div class="logo col-4"><img src="assets/logo_opny_express.png" alt="logo strona glowna" class="img-fluid"></div>
+                <div class="logo col-4"><img src="assets/logo_opny_express.png" alt="logo strona glowna" class="img-fluid logomenu"></div>
                 <div class="phone col-4">68 333 33 33 <i class="fa fa-phone" aria-hidden="true"></i> 728 999 999<br>Pn-Pt 7.00-22.00 <i class="fa fa-clock-o" aria-hidden="true"></i> Sb-Nd 8.00-15.00</div>
                 
                 
-                <div class="cart col-1"><img src="assets/oko.png" alt="ikona ogladane"><div>Oglądane</div></div>
-                <div class="cart col-1"><img src="assets/logowanie-iko.png" alt="ikona ogladane"><div>Zaloguj się</div></div><div class="cart col-1"><img src="assets/koszyk-iko.png" alt="ikona ogladane"><div>Koszyk</div></div>
+                <div class="cart col-1"><img src="assets/oko.png" alt="ikona ogladane" class="menuhidden"><div>Oglądane</div></div>
+                <div class="cart col-1"><img src="assets/logowanie-iko.png" alt="ikona ogladane" class="menuhidden"><div>Zaloguj się</div></div><div class="cart col-1"><img src="assets/koszyk-iko.png" alt="ikona ogladane"class="menuhidden"><div>Koszyk</div></div>
                 
                 </div>
             </div>
-
 
     
     <!-- wyszukiwarka -->
@@ -736,8 +730,8 @@
                 </div>
             </div>
             <div id="products" class="row list-group">
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
+                <div class="inset  col-xs-4 col-lg-4">
+                    <div class="miniature container">
 
                         <div class="row">
 
@@ -779,8 +773,8 @@
 
                     </div>
                 </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
+                <div class="inset  col-xs-4 col-lg-4">
+                    <div class="miniature container">
 
                         <div class="row">
 
@@ -823,8 +817,8 @@
 
                     </div>
                 </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
+                <div class="inset  col-xs-4 col-lg-4">
+                    <div class="miniature">
 
                         <div class="row">
 
@@ -866,8 +860,8 @@
 
                     </div>
                 </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
+                <div class="inset  col-xs-4 col-lg-4">
+                    <div class="miniature">
 
                         <div class="row">
 
@@ -909,8 +903,8 @@
 
                     </div>
                 </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
+                <div class="inset  col-xs-4 col-lg-4">
+                    <div class="miniature">
 
                         <div class="row">
 
@@ -952,8 +946,8 @@
 
                     </div>
                 </div>
-                <div class="item  col-xs-4 col-lg-4">
-                    <div class="thumbnail">
+                <div class="inset  col-xs-4 col-lg-4">
+                    <div class="miniature">
 
                         <div class="row">
 
@@ -1057,8 +1051,9 @@
         });
 
     </script>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
@@ -1103,19 +1098,29 @@
         $(document).ready(function() {
             $('#list').click(function(event) {
                 event.preventDefault();
-                $('#products .item').addClass('list-group-item');
+                $('#products .inset').addClass('list-group-inset');
             });
             $('#grid').click(function(event) {
                 event.preventDefault();
-                $('#products .item').removeClass('list-group-item');
-                $('#products .item').addClass('grid-group-item');
+                $('#products .inset').removeClass('list-group-inset');
+                $('#products .inset').addClass('grid-group-inset');
             });
         });
         //tooltip
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
         })
-
+         //menu fixed
+  $(function(){
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 500) {
+                $('#header').addClass('stickyMenu');
+            }
+            else {
+                $('#header').removeClass('stickyMenu');
+            }
+        });
+    });
     </script>
 
 </body>
