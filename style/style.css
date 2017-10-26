@@ -183,6 +183,56 @@ h6 {
       belka z menu
 ========================================================*/
 
+.stickyMenu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100000;
+}
+
+
+
+/*
+#header .minisearch {
+    visibility: hidden;
+}
+
+#header.stickyMenu .minisearch {
+    color: red;
+}
+*/
+
+#header.stickyMenu {
+    background: #bbbbbb;
+    padding: -10px 0px -10px 0px;
+
+}
+
+
+#header.stickyMenu .logomenu {
+    height: 26px;
+    width: 163px;
+    padding: 0;
+
+}
+
+#header.stickyMenu nav {
+    visibility: hidden;
+}
+
+#header.stickyMenu .phone {
+    visibility: hidden;
+}
+
+
+#header.stickyMenu .cart {
+    padding-top:
+}
+
+#header.stickyMenu .menuhidden {
+    visibility: hidden;
+}
+
 .logo_nav {
     float: right;
     margin-right: 10%;
@@ -683,7 +733,7 @@ ul:last-child {
 
 /* promocyjne ikony duża lista */
 
-.item.list-group-item {
+.inset.list-group-inset {
     float: none;
     width: 100%;
     border: none;
@@ -693,18 +743,45 @@ ul:last-child {
 }
 
 
-.item.list-group-item .list-group-image {
+.inset.list-group-inset .list-group-image {
     margin-right: 0px;
     border: none;
 }
 
+.inset.grid-group-inset h5 {
+    visibility: hidden;
+}
 
-
-.item.grid-group-item .promo_icon_gift {
-    width: 104px;
-    height: 78px;
+.inset.grid-group-inset .promo_recommend {
+    width: 53px;
+    height: 53px;
+    background-color: #f26522;
+    float: right;
     color: #ffffff;
-    background-color: #486996;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.inset.grid-group-inset .promo_sale {
+    width: 53px;
+    height: 53px;
+    background-color: #f7941d;
+    float: right;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+.inset.grid-group-inset .promo_icon_gift {
+    width: 53px;
+    height: 53px;
+    color: #ffffff;
+    background-color: #004996;
     float: right;
     font-size: 13px;
     font-weight: 500;
@@ -712,16 +789,46 @@ ul:last-child {
     text-transform: uppercase;
 }
 
-.item.grid-group-item .thumbnail {
+
+
+.inset.list-group-inset .promo_recommend {
+    width: 104px;
+    height: 78px;
+    background-color: #f26522;
+    float: right;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.inset.grid-group-inset .miniature {
     width: 100%;
-    background: #000;
+    background: #fff;
     border: none;
     padding: 0px;
     margin: 20px;
 
 }
 
-.item.list-group-item .promo_icon_gift {
+.inset.list-group-inset .promo_sale {
+    width: 104px;
+    height: 78px;
+    background-color: #f7941d;
+    float: right;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.inset.grid-group-inset h5 {
+    visibility: visible;
+}
+
+.inset.list-group-inset .promo_icon_gift {
     width: 104px;
     height: 78px;
     color: #ffffff;
@@ -736,37 +843,35 @@ ul:last-child {
 
 
 
-
-
-.item.list-group-item .thumbnail {
-    padding: 10px;
+.inset.list-group-inset .miniature {
+    padding: 0px;
     margin-bottom: 0px;
     border: none;
-    background: red;
+    background: #ffffff;
 }
 
-.item.list-group-item .caption {
+.inset.list-group-inset .caption {
     padding: 0px 0px 0px 0px;
     border: none;
 }
 
 
 
-.item.list-group-item:before,
-.item.list-group-item:after {
+.inset.list-group-inset:before,
+.inset.list-group-inset:after {
     display: table;
     content: " ";
 }
 
-.item.list-group-item img {
+.inset.list-group-inset img {
     float: left;
 }
 
-.item.list-group-item:after {
+.inset.list-group-inset:after {
     clear: both;
 }
 
-.list-group-item-text {
+.list-group-inset-text {
     margin: 0 0 0px;
 }
 
@@ -776,6 +881,7 @@ ul:last-child {
     padding: 0px;
     margin: 0px;
     height: 78px;
+    width: 100%;
     background-color: #eeeeee;
     background-image: linear-gradient(to left, #ffffff 0%, #dddddd 100%);
     position: relative;
@@ -790,6 +896,7 @@ ul:last-child {
 }
 
 .name-product > .name > h2 {
+
     padding: 0px;
 }
 
@@ -833,40 +940,13 @@ ul:last-child {
 
 
 .name-product > .promo {
-    position: absolute;
+    float: right;
     top: 0;
     right: 0;
 }
 
 
 
-
-
-.promo_recommend {
-    width: 104px;
-    height: 78px;
-    background-color: #f26522;
-    float: right;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 24px;
-    text-transform: uppercase;
-
-
-}
-
-.promo_sale {
-    width: 104px;
-    height: 78px;
-    background-color: #f7941d;
-    float: right;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 24px;
-    text-transform: uppercase;
-}
 
 
 
