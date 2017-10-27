@@ -922,6 +922,61 @@ ul:last-child {
 }
 
 
+
+.footer {
+    background-color: #f8f8f8;
+    color: white;
+    padding: 40px;
+    margin-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.footer ul {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.footer h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+}
+
+
+
+.sm-icons .fa {
+    background-color: #00C7E8;
+    color: white;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+.td-bold {
+    font-weight: 600;
+}
+
+td {
+    padding: 20px;
+    margin: 20px;
+}
+
+.footer p {
+    color: white;
+    font-size: 15px;
+}
+
+.final {
+    background-color: #bbbbbb;
+    padding: 20;
+    margin: 0;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {}
