@@ -10,67 +10,82 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="LSB Data Wrocław">
     <title>Opony express</title>
- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/reset.css">
+<!--<link rel=" stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css ">-->
+    <link rel="stylesheet" href="style/media-queries.css">
     <link rel="stylesheet" href="assets/fonts/stylesheet1.css">
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/price.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  
+
 </head>
 
 <body>
-    
-        <!-- belka z logo -->
-        <div class="navbar_top"><a href="http://www.oponyexpress.pl/"><img src="assets/logo.jpg" alt="logo strona sieci opon express" class="logo_nav"></a></div>
-<header id="header" class="clearfix">
+
+    <!-- belka z logo -->
+    <div class="navbar_top"><a href="http://www.oponyexpress.pl/"><img src="assets/logo.jpg" alt="logo strona sieci opon express" class="logo_nav"></a></div>
+    <header id="header" class="clearfix">
         <!-- navbar -->
-        
+
         <div class="position container">
-            <div class="row">
-                <div class="logo col-4"><img src="assets/logo_opny_express.png" alt="logo strona glowna" class="img-fluid logomenu"></div>
-                <div class="phone col-4">68 333 33 33 <i class="fa fa-phone" aria-hidden="true"></i> 728 999 999<br>Pn-Pt 7.00-22.00 <i class="fa fa-clock-o" aria-hidden="true"></i> Sb-Nd 8.00-15.00</div>
-                
-                
-                <div class="cart col-1"><img src="assets/oko.png" alt="ikona ogladane" class="menuhidden"><div>Oglądane</div></div>
-                <div class="cart col-1"><img src="assets/logowanie-iko.png" alt="ikona ogladane" class="menuhidden"><div>Zaloguj się</div></div><div class="cart col-1"><img src="assets/koszyk-iko.png" alt="ikona ogladane"class="menuhidden"><div>Koszyk</div></div>
-                
+                <div class="logo col-lg-4 col-md-4 col-xs-12 "><img src="assets/logo_opny_express.png" alt="logo strona glowna" class="img-fluid logomenu"></div>
+                <div class="phone logo col-lg-4 col-md-4 col-xs-12 ">
+
+                    <div class="menuhidden">68 333 33 33 <i class="fa fa-phone" aria-hidden="true"></i> 728 999 999</div>
+
+                    <div> Pn-Pt 7.00-22.00 <i class="fa fa-clock-o" aria-hidden="true"></i> Sb-Nd 8.00-15.00 </div>
                 </div>
+
+                <div class="cart logo col-lg-3 col-md-4 col-xs-12 ">
+                    <div class="in_line"><img src="assets/oko.png" alt="ikona ogladane">
+                        <div class="menuhidden">Oglądane</div>
+                    </div>
+                    <div class="in_line "><img src="assets/logowanie-iko.png" alt="ikona ogladane">
+                        <div class="menuhidden">Zaloguj się</div>
+                    </div>
+                    <div class="in_line "><img src="assets/koszyk-iko.png" alt="ikona ogladane">
+                        <div class="menuhidden">Koszyk</div>
+                    </div>
+                </div>
+
+
             </div>
+        </div>
 
-    
-    <!-- wyszukiwarka -->
-    <section class="search container">
-        <div class="tabs tabs-style-flip">
-            <nav>
-                <ul>
-                    <li><a href="#section-flip-1" class="icon icon-car"><span>opony samochodowe</span></a></li>
-                    <li><a href="#section-flip-2" class="icon icon-tractor"><span>opony rolnicze</span></a></li>
-                    <li><a href="#section-flip-3" class="icon icon-tir"><span>opony przemysłowe </span></a></li>
 
-                </ul>
-            </nav>
-            <div class="content-wrap">
+        <!-- wyszukiwarka -->
 
- <!-- wyszukiwarka samochody osobowe -->
-                <section id="section-flip-1">
-                    <div class="container">
-                        <div class="row">
-                            <div id="filter-panel" class=" filter-panel">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <div class="button-search col-2">
-                                            
-                                                <div class="button-search"><i class="fa fa-car" aria-hidden="true"></i> szukaj opon wg rozmiaru</div>
-                                                <div class="button-search"> <i class="fa fa-arrows" aria-hidden="true"></i>szukaj WG modelu auta</div>
-                                           
-                                        </div> 
-                                        <form class="form-inline col-8" role="form col-10">
-                                            <div class="form-up">
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Szerokość</p></label>
-                                                    <select id="pref-perpage" class="form-control">
+        <div class=" container minisearch"> Aktywne filtry: Rozmiar: 205/55 R16 Typ pojazdu: Osobowe Sezon: Zimowe</div>
+        <section class="search container">
+            <div class="tabs tabs-style-flip">
+                <nav>
+                    <ul>
+                        <li><a href="#section-flip-1" class="icon icon-car"><span>opony samochodowe</span></a></li>
+                        <li><a href="#section-flip-2" class="icon icon-tractor"><span>opony rolnicze</span></a></li>
+                        <li><a href="#section-flip-3" class="icon icon-tir"><span>opony przemysłowe </span></a></li>
+
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+
+                    <!-- wyszukiwarka samochody osobowe -->
+                    <section id="section-flip-1">
+                        <div class="container">
+                            <div class="row">
+                                <div id="filter-panel" class=" filter-panel">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="col-lg-2">
+
+                                                <a href=""><div class="button-search"><i class="fa fa-car" aria-hidden="true"></i> szukaj opon wg rozmiaru</div></a><a href="">  <div class="button-search"> <i class="fa fa-arrows" aria-hidden="true"></i>szukaj wg modelu auta</div></a>
+                                              
+
+                                            </div>
+                                            <form class="form-inline col-8" role="form col-10">
+                                                <div class="form-up">
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Szerokość</p></label>
+                                                        <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -92,10 +107,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Profil</p></label>
-                                                    <select id="pref-perpage" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Profil</p></label>
+                                                        <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -117,10 +132,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Średnica</p></label>
-                                                    <select id="pref-perpage" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Średnica</p></label>
+                                                        <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -142,42 +157,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Producent/ klasa opony</p></label>
-                                                    <select id="pref-perpage" class="form-control-all">
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option selected="selected" value="65">Wszystko</option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                                <option value="40">40</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                                <option value="200">200</option>
-                                <option value="300">300</option>
-                                <option value="400">400</option>
-                                <option value="500">500</option>
-                                <option value="1000">1000</option>
-                            </select>
-                                                </div>
-   
-                                           
-                                            <li class="question search-adv" id="question">
-                                                <div class="expand-bar"></div>Wyszukiwanie zaawansowane<hr /> Nie pamiętasz rozmiaru? Szukaj wg modelu auta <span>Gdzie znaleźć rozmiar opony?</span></li>
-                                                
-                                            <li class="answer">
-                                                <div class="form-up">
+                                                    </div>
                                                     <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Prędkość</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Producent/ klasa opony</p></label>
+                                                        <select id="pref-perpage" class="form-control-all">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -200,9 +183,40 @@
                                 <option value="1000">1000</option>
                             </select>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Nośność</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                    <li class="question search-adv" id="question">
+                                                        <div class="expand-bar"></div>Wyszukiwanie zaawansowane
+                                                        <hr /> Nie pamiętasz rozmiaru? Szukaj wg modelu auta <span>Gdzie znaleźć rozmiar opony?</span></li>
+
+                                                    <li class="answer">
+                                                        <div class="form-up">
+                                                            <div class="form-group">
+                                                                <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Prędkość</p></label>
+                                                                <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">Wszystko</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Nośność</p></label>
+                                                                <select id="pref-perpage" class="form-control">
                                  <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -224,10 +238,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Typ pojazdu</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Typ pojazdu</p></label>
+                                                                <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -249,66 +263,68 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>sezon</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>sezon</p></label>
+                                                                <select id="pref-perpage" class="form-control">
                                 <option value="2">zimowe</option>
                                 <option value="3">wiosna</option>
                                 <option selected="selected" value="65">letnie</option>
                                 <option value="4">jesienne</option>
                             </select>
-                                                    </div>
-                                                </div>
+                                                            </div>
+                                                        </div>
 
 
-                                               
-                                                <div class="form-group">
-                                                    <div class="checkbox" style="margin-left:10px; margin-right:10px;">
-                                                        <label><input type="checkbox">wzmacnianie</label>
-                                                    </div>
-                                                    <div class="checkbox" style="margin-left:10px; margin-right:10px;">
-                                                        <label><input type="checkbox">Run on flat</label>
-                                                    </div>
-                                                    <div class="checkbox" style="margin-left:10px; margin-right:10px;">
-                                                        <label><input type="checkbox">tylko z monażem w sieci serwisów opony express</label>
-                                                    </div>
-                                                 
 
-                                                    <div class="range-slider" id="facet-price-range-slider" data-options='{"output":{"prefix":" "},"maxSymbol":"+"}'>
-                                                        <input name="range-1" value="0" min="0" max="1250" step="1" type="range">
-                                                        <input name="range-2" value="1250" min="0" max="1250" step="1" type="range">
-                                                    </div>
-
-                                                </div>
-                                            </li>
+                                                        <div class="form-group">
+                                                            <div class="checkbox" style="margin-left:10px; margin-right:10px;">
+                                                                <label><input type="checkbox">wzmacnianie</label>
+                                                            </div>
+                                                            <div class="checkbox" style="margin-left:10px; margin-right:10px;">
+                                                                <label><input type="checkbox">Run on flat</label>
+                                                            </div>
+                                                            <div class="checkbox" style="margin-left:10px; margin-right:10px;">
+                                                                <label><input type="checkbox">tylko z monażem w sieci serwisów opony express</label>
+                                                            </div>
 
 
-                                        </form><div class="col-1"> <button type="submit" class="button-search-top">
+                                                            <div class="range-slider" id="facet-price-range-slider" data-options='{"output":{"prefix":" "},"maxSymbol":"+"}'>
+                                                                <input name="range-1" value="0" min="0" max="1250" step="1" type="range">
+                                                                <input name="range-2" value="1250" min="0" max="1250" step="1" type="range">
+                                                            </div>
+
+                                                        </div>
+                                                    </li>
+
+
+                                            </form>
+                                            <div class="col-1"> <button type="submit" class="button-search-top">
                                 SZUKAJ OPON
-                            </button></div> 
+                            </button></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                          </div>
+                                
+                            </div>
+                        </div>
 
-                        </div> </div>
-                    </div>
 
+                    </section>
+                    <!-- wyszukiwarka samochody rolnicze -->
+                    <section id="section-flip-2">
+                        <div class="container">
+                            <div class="row">
+                                <div id="filter-panel" class=" filter-panel">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
 
-                </section>
-                <!-- wyszukiwarka samochody rolnicze -->
-                <section id="section-flip-2">
-                     <div class="container">
-                        <div class="row">
-                            <div id="filter-panel" class=" filter-panel">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                    
-                                        <form class="form-inline" role="form col-10">
-                                            <div class="form-up">
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Szerokość</p></label>
-                                                    <select id="pref-perpage" class="form-control">
+                                            <form class="form-inline" role="form col-10">
+                                                <div class="form-up">
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Szerokość</p></label>
+                                                        <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -330,10 +346,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Profil</p></label>
-                                                    <select id="pref-perpage" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Profil</p></label>
+                                                        <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -355,10 +371,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Średnica</p></label>
-                                                    <select id="pref-perpage" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Średnica</p></label>
+                                                        <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -380,10 +396,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Producent</p></label>
-                                                    <select id="pref-perpage" class="form-control-all">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Producent</p></label>
+                                                        <select id="pref-perpage" class="form-control-all">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -405,19 +421,19 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-   <div class="col-2"> <button type="submit" class="button-search-top">
+                                                    </div>
+                                                    <div class="col-2"> <button type="submit" class="button-search-top">
                                 SZUKAJ OPON
                             </button></div>
-                                            </div>
-                                            <li class="question search-adv" id="question">
-                                                <div class="expand-bar"></div>Wyszukiwanie zaawansowane</li>
-                                                
-                                            <li class="answer">
-                                                <div class="form-up">
-                                                    <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Prędkość</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                </div>
+                                                <li class="question search-adv" id="question">
+                                                    <div class="expand-bar"></div>Wyszukiwanie zaawansowane</li>
+
+                                                <li class="answer">
+                                                    <div class="form-up">
+                                                        <div class="form-group">
+                                                            <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Prędkość</p></label>
+                                                            <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -439,10 +455,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Nośność</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Nośność</p></label>
+                                                            <select id="pref-perpage" class="form-control">
                                  <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -464,10 +480,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Konstrukcja</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Konstrukcja</p></label>
+                                                            <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -489,34 +505,34 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
+                                                        </div>
+
                                                     </div>
-                                                  
-                                                </div>
 
-                                            </li>
+                                                </li>
 
 
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <!-- wyszukiwarka samochody ciężarowe -->
-                <section id="section-flip-3">
-                    <div class="container">
-                        <div class="row">
-                            <div id="filter-panel" class=" filter-panel">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        
-                                        <form class="form-inline" role="form col-10">
-                                            <div class="form-up">
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Szerokość</p></label>
-                                                    <select id="pref-perpage" class="form-control">
+                    </section>
+                    <!-- wyszukiwarka samochody ciężarowe -->
+                    <section id="section-flip-3">
+                        <div class="container">
+                            <div class="row">
+                                <div id="filter-panel" class=" filter-panel">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+
+                                            <form class="form-inline" role="form col-10">
+                                                <div class="form-up">
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Szerokość</p></label>
+                                                        <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -538,10 +554,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Profil</p></label>
-                                                    <select id="pref-perpage" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Profil</p></label>
+                                                        <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -563,10 +579,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Średnica</p></label>
-                                                    <select id="pref-perpage" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Średnica</p></label>
+                                                        <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -588,44 +604,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Producent</p></label>
-                                                    <select id="pref-perpage" class="form-control-all">
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option selected="selected" value="65">Wszystko</option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                                <option value="40">40</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                                <option value="200">200</option>
-                                <option value="300">300</option>
-                                <option value="400">400</option>
-                                <option value="500">500</option>
-                                <option value="1000">1000</option>
-                            </select>
-                                                </div>
- <div class="col-2"> <button type="submit" class="button-search-top">
-                                SZUKAJ OPON
-                            </button></div>
-                                            </div>
-                                            <li class="question search-adv" id="question">
-                                                <div class="expand-bar"></div>Wyszukiwanie zaawansowane</li>
-                                                
-                                            <li class="answer">
-                                                <div class="form-up">
+                                                    </div>
                                                     <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Prędkość</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Producent</p></label>
+                                                        <select id="pref-perpage" class="form-control-all">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -648,9 +630,43 @@
                                 <option value="1000">1000</option>
                             </select>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Nośność</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                    <div class="col-2"> <button type="submit" class="button-search-top">
+                                SZUKAJ OPON
+                            </button></div>
+                                                </div>
+                                                <li class="question search-adv" id="question">
+                                                    <div class="expand-bar"></div>Wyszukiwanie zaawansowane</li>
+
+                                                <li class="answer">
+                                                    <div class="form-up">
+                                                        <div class="form-group">
+                                                            <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Prędkość</p></label>
+                                                            <select id="pref-perpage" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option selected="selected" value="65">Wszystko</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Nośność</p></label>
+                                                            <select id="pref-perpage" class="form-control">
                                  <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -672,10 +688,10 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Typ pojazdu</p></label>
-                                                        <select id="pref-perpage" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="filter-col" style="margin-right:0;" for="pref-perpage"><p>Typ pojazdu</p></label>
+                                                            <select id="pref-perpage" class="form-control">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -697,31 +713,31 @@
                                 <option value="500">500</option>
                                 <option value="1000">1000</option>
                             </select>
+                                                        </div>
+
                                                     </div>
-                                                   
-                                                </div>
 
 
-                                          
-                                            </li>
+
+                                                </li>
 
 
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
-
                         </div>
-                    </div>
-                </section>
+                    </section>
 
+                </div>
+                <!-- /wyszukiwarka kontent -->
             </div>
-            <!-- /wyszukiwarka kontent -->
-        </div>
-        <!-- /tabs -->
-    </section>
-</header>
-   <section class="searching">
+            <!-- /tabs -->
+        </section>
+    </header>
+    <section class="searching">
         <div class="container">Znaleziono 156 opon w cenie od 245 zł do 439 zł
             <div class="well well-sm">
 
@@ -729,8 +745,50 @@
                     <a href="#" id="list"><img src="assets/kafle-poziome-iko.png" alt=""></a> <a href="#" id="grid"><img src="assets/kafle-pionowe.png" alt=""></a>
                 </div>
             </div>
-            <div id="products" class="row list-group">
-                <div class="inset  col-xs-4 col-lg-4">
+            <div id="products" class="row ">
+                <div class="inset list-group-inset col-xs-4 col-lg-4">
+                    <div class="miniature container">
+
+                        <div class="row">
+
+                            <div class="name-product">
+
+                                <div class="like col-lg-2"> <img src="assets/like.svg" alt="">
+                                    <h6>Oszczędność paliwa</h6>
+                                </div>
+                                <div class="name in_line col-lg-5">
+                                    <div class="new">NOWOŚĆ</div>
+                                    <h2>Continental</h2>
+                                    <h3>contsportcontact 205/55 R16 91 W</h3>
+                                </div>
+                                <div class="promo col-lg-5 "> <button type="button" class="promo_icon_gift" data-toggle="tooltip" data-placement="left" title="prezent">
+ <img src="assets/prezent-iko.png" alt=""><h5>Prezent</h5>
+</button>
+
+                                    <button type="button" class="promo_recommend" data-toggle="tooltip" data-placement="left" title="Promocja">
+ <img src="assets/vector-smart-object.png" alt=""><h5>Promocja</h5>
+</button>
+
+                                    <button type="button" class="promo_sale" data-toggle="tooltip" data-placement="left" title="Wyprzedaż">
+ <img src="assets/no-yczki-iko.png" alt=""><h5>Wyprzedaż</h5>
+</button></div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="product_content in_line col-3">
+                                <div class="text_promo">Promocja ! I CeNA/JAKOŚĆ </div>
+                                <!-- <div class="best"><img src="assets/bestseller.png" alt=""></div> -->
+                                <div class="image_product"><img src="assets/zdj-opona.png" alt=""></div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="inset list-group-inset  col-xs-4 col-lg-4">
                     <div class="miniature container">
 
                         <div class="row">
@@ -760,6 +818,7 @@
                             </div>
 
                         </div>
+
                         <div class="row">
                             <div class="product_content in_line col-3">
                                 <div class="text_promo">Promocja ! I CeNA/JAKOŚĆ </div>
@@ -773,51 +832,7 @@
 
                     </div>
                 </div>
-                <div class="inset  col-xs-4 col-lg-4">
-                    <div class="miniature container">
-
-                        <div class="row">
-
-                            <div class="name-product">
-
-                                <div class="like col-2"> <img src="assets/like.svg" alt="">
-                                    <h6>Oszczędność paliwa</h6>
-                                </div>
-                                <div class="name in_line col-5">
-                                    <div class="new">NOWOŚĆ</div>
-                                    <h2>Continental</h2>
-                                    <h3>contsportcontact 205/55 R16 91 W</h3>
-
-                                </div>
-                                <div class="promo col-5"> <button type="button" class="promo_icon_gift" data-toggle="tooltip" data-placement="left" title="prezent">
- <img src="assets/prezent-iko.png" alt=""><h5>Prezent</h5>
-</button>
-
-                                    <button type="button" class="promo_recommend" data-toggle="tooltip" data-placement="left" title="Promocja">
- <img src="assets/vector-smart-object.png" alt=""><h5>Promocja</h5>
-</button>
-
-                                    <button type="button" class="promo_sale" data-toggle="tooltip" data-placement="left" title="Wyprzedaż">
- <img src="assets/no-yczki-iko.png" alt=""><h5>Wyprzedaż</h5>
-</button></div>
-                            </div>
-
-                        </div>
-                    
-                        <div class="row">
-                            <div class="product_content in_line col-3">
-                                <div class="text_promo">Promocja ! I CeNA/JAKOŚĆ </div>
-                                <!-- <div class="best"><img src="assets/bestseller.png" alt=""></div> -->
-                                <div class="image_product"><img src="assets/zdj-opona.png" alt=""></div>
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-                </div>
-                <div class="inset  col-xs-4 col-lg-4">
+                <div class="inset list-group-inset  col-xs-4 col-lg-4">
                     <div class="miniature">
 
                         <div class="row">
@@ -992,7 +1007,66 @@
             </div>
         </div>
     </section>
+    <!-- =========== stopka ===========-->
+<section class="">  
+    <div class="row footer container">
+        <div class="col-3 col-s-12">
+            <h1 class="headine">Produkty</h1>
+          <ul>
+              <li> <a href="    ">Opony samochodowe</a> </li>
+              
+              <li> <a href="    ">Opony rolnicze i leśne</a> </li>
+              
+              <li> <a href="    ">Opony przemysłowe</a> </li>
+            
+              
+          </ul>
+        </div><div class="col-3 col-s-12">
+        <h1 class="headine">OponyExpress.pl</h1>
+          <ul>
+              <li> <a href="    ">Dostawa</a> </li>
+              
+              <li> <a href="    ">Zwroty</a> </li>
+              
+              <li> <a href="    ">Reklamacje</a> </li>
+              
+              <li> <a href="    ">Regulamin sklepu</a> </li>
+              
+              <li> <a href="    ">Polityka prywatności i pliki cookies</a> </li>
+            
+              
+          </ul>
+        </div>
+        <div class="col-3 col-s-12">
+            <h1 class="headine">Infolinia</h1>
+            <ul>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>68 333 33 33</li>
 
+                <li><i class="fa fa-clock-o" aria-hidden="true"></i> Pn-Pt  7.00-22.00</li>
+                
+                <li>Sb-Nd 	8.00-15.00</li>
+
+            </ul>
+        </div>
+
+
+        <div class="col-3 col-s-12">
+            <h1 class="headine">Znajdź nas!</h1>
+            
+            <div class="sm-icons">
+               
+                <a href="   "><i class="fa fa-youtube-square"></i></a>
+                <a href="   "><i class="fa fa-facebook"></i></a>
+                
+               
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-s-12">
+            <p class="final">Copyright © 2017 OponyExpress.pl. Wszystkie prawa zastrzeżone. Design LSB DATA</p>
+        </div>
+    </div> </section>
     <script src="js/cbpFWTabs.js"></script>
     <script>
         (function() {
@@ -1052,7 +1126,7 @@
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -1063,6 +1137,12 @@
     </script>
     <script type="text/javascript" src="js/price.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    
+    
+    
+    
+    
     <!-- wyszukiwarka rozwijanie -->
     <script>
         jQuery(function($) {
@@ -1090,7 +1170,6 @@
 
                 }
             });
-
         });
 
     </script>
@@ -1110,20 +1189,23 @@
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
         })
-         //menu fixed
-  $(function(){
-        $(window).scroll(function() {
-            if ($(this).scrollTop() >= 500) {
-                $('#header').addClass('stickyMenu');
-            }
-            else {
-                $('#header').removeClass('stickyMenu');
-            }
+        //menu fixed
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 500) {
+                    $('#header').addClass('stickyMenu');
+                } else {
+                    $('#header').removeClass('stickyMenu');
+                }
+            });
         });
-    });
-    </script>
+
+    </script><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </body>
 
 </html>
-
