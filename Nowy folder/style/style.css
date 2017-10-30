@@ -149,7 +149,7 @@ header {
 /*****************************/
 
 section.search {
-    margin-top: -62px;
+/*    margin-top: -62px;*/
 }
 
 /* Flip */
@@ -298,7 +298,7 @@ section.search {
     margin: 20px;
     height: 100%;
     background-image: -webkit-gradient(linear, left top, right top, from(#dddddd), to(#eeeeee));
-    background-image: linear-gradient(to right, #dddddd 0%, #eeeeee 100%);
+    background-image: linear-gradient(to right, #dddddd 10%, #eeeeee 100%);
     font-size: 14px;
 }
 
@@ -308,10 +308,37 @@ section.search {
 
 .panel-body {}
 
+/*
 .form-group {
     margin-bottom: 15px;
     margin-right: 22px;
+    display: inline;
+
 }
+*/
+
+.main {
+    float: left;
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: inline;
+}
+
+.main h2 {
+    margin: 1em 30px;
+    color: #17BCE8;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #bbb;
+    padding: 0px 0px 20px 0px;
+}
+
+/*
+.form-up {
+    display: inline;
+}
+*/
 
 .form-inline .form-group {
     display: inline-block;
@@ -492,19 +519,22 @@ section.search {
 
 .cart {
     bottom: 0;
-
-
+    left: 0;
     text-align: center;
     font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
-    float: right;
+    float: left;
 }
 
 .phone .fa {
     height: 16px;
     color: #e30613;
     padding: 0 10px 0 10px;
+}
+
+.cart a {
+    margin: 10px;
 }
 
 /* Style for "tło nazwy" */
