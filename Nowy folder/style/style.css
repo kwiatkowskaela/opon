@@ -306,9 +306,7 @@ section.search {
     border-color: #ddd;
 }
 
-.panel-body {
-    padding: 15px;
-}
+.panel-body {}
 
 .form-group {
     margin-bottom: 15px;
